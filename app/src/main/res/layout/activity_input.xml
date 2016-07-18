@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+<RelativeLayout
+    android:focusableInTouchMode="true"
+    tools:context="com.devesh.todolist.Input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TASK"
+        android:textColor="@color/black"
+        android:id="@+id/edittext"
+        android:textSize="25sp"/>
+
+    <DatePicker
+        android:layout_below="@id/edittext"
+        android:layout_width="match_parent"
+        android:minDate="07/14/2016"
+        android:clickable="true"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/datepicker">
+
+    </DatePicker>
+
+    <LinearLayout
+        android:layout_below="@id/datepicker"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="10sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+        <RatingBar
+
+            android:layout_width="wrap_content"
+            android:numStars="3"
+            android:clickable="true"
+android:focusableInTouchMode="true"
+
+
+            android:id="@+id/priority"
+            android:layout_height="40sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:background="@drawable/button_style1"
+        android:textColor="@drawable/button_style1_text"
+        android:layout_marginTop="15sp"
+        android:textSize="25sp"
+        android:padding="5sp"
+        android:layout_below="@id/ll1"
+        android:id="@+id/submit"
+        android:layout_marginLeft="110sp"
+        android:layout_marginStart="110sp"/>
+
+</RelativeLayout>
+</ScrollView>
