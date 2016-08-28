@@ -9,3 +9,7 @@ Following features are yet to be added :-
 2. On Swipe Interaction
 3. Alarm Notification
 4. Filter Option
+
+![alt text](https://github.com/dsaini17/TaskManager/blob/master/ss1.png)
+
+![alt text](https://github.com/dsaini17/TaskManager/blob/master/ss2.png)
